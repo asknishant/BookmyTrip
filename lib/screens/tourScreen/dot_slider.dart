@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 class DotSlider extends StatefulWidget {
-  bool isOn = false;
+  bool isOn;
 
-  DotSlider({bool isOn});
+  DotSlider({bool isOn}) {
+    this.isOn = isOn;
+  }
   @override
   _DotSliderState createState() => _DotSliderState();
 }
@@ -14,8 +16,8 @@ class _DotSliderState extends State<DotSlider> {
     return Padding(
       padding: const EdgeInsets.all(4.0),
       child: Container(
-        width: 10,
-        height: 10,
+        width: 7,
+        height: 7,
         decoration: BoxDecoration(
           //color: Colors.blue,
           color: widget.isOn ? Colors.blue : Colors.grey,
