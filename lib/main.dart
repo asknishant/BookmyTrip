@@ -1,3 +1,4 @@
+import 'package:bookmytrip/screens/login_screen.dart/Login.dart';
 import 'package:bookmytrip/screens/tourScreen/tour_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.white,
       ),
-      home: TourScreen(),
+      home: Login(),
     );
   }
 }
